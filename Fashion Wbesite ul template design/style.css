@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Elephant";
+    src: url(./assets/fonts/Elephant\ Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 174px;
+    gap: 15px;
+    background-color: hsl(144, 58%, 75%)
+}
+
+.header-logo-container span {
+    font-family: "Elephant";
+    color: #224F34;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.header-nav ul {
+    display: flex;
+    text-transform: uppercase;
+    gap: 57px;
+}
+
+.header-nav ul li {
+    list-style: none;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    color: #224F34;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.header-login-container {
+    display: flex;
+    align-items: center;
+    gap: 59px;
+}
+
+.header-login-container img {
+    position: relative;
+    bottom: -3px;
+    height: 30px;
+    width: 30px;
+}
+
+.header-login-container a {
+    color: #224F34;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    text-decoration: none;
+    border-radius: 3px;
+    border: 2.5px solid #224F34;
+    padding: 11px 41px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 160px;
+    background-color: #C2EFD4;
+    padding: 166px 174px;
+}
+
+.main-text-area-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 54px;
+}
+
+.main-text-area-container .text-area {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.main-text-area-container .text-area h1 {
+    width: 649px;
+    color: #224F34;
+    font-family: "Rufina", serif;
+    font-size: 86px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.main-text-area-container .text-area p {
+    width: 432px;
+    color: #267D49;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.main-text-area-container a {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+    text-decoration: none;
+    text-align: center;
+    background-color: #224F34;
+    border-radius: 5px;
+    box-shadow: 6px 33px 59px 0px rgba(0, 0, 0, 0.30);
+    padding: 22px 60px;
+}
