@@ -5,9 +5,14 @@
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(./assets/fonts/RobotoSlab-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rufina:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -19,7 +24,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 174px;
+    padding: 30px 174px;
     gap: 15px;
     background-color: hsl(144, 58%, 75%)
 }
@@ -49,6 +54,13 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+
+    transition: color 0.3s ease;
+}
+
+.header-nav ul li a:active,
+.header-nav ul li a:hover {
+    color: black;
 }
 
 .header-login-container {
@@ -76,6 +88,19 @@ header {
     border-radius: 3px;
     border: 2.5px solid #224F34;
     padding: 11px 41px;
+
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+}
+
+.header-login-container a:hover {
+    background-color: #224F34;
+    color: white;
+    border-radius: 50px;
+}
+
+.header-login-container a:active {
+    background-color: #ffffff00;
+    color: #224F34;
 }
 
 main {
@@ -128,11 +153,181 @@ main {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    
+
     text-decoration: none;
     text-align: center;
     background-color: #224F34;
+    border: 2px solid #224F34;
     border-radius: 5px;
     box-shadow: 6px 33px 59px 0px rgba(0, 0, 0, 0.30);
     padding: 22px 60px;
+
+    transition: border 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease-in-out, color 0.3s ease;
+}
+
+.main-text-area-container a:hover {
+    border: 2px solid #224F34;
+    background-color: #224f3400;
+    border-radius: 50px;
+    color: #224F34;
+}
+
+.main-text-area-container a:active {
+    background-color: #224F34;
+    color: white;
+}
+
+/* ............. */
+
+.best-selling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+    padding: 144px 176px;
+}
+
+.best-selling .text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
+}
+
+.best-selling .text-area h2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #224F34;
+}
+
+.best-selling .text-area p {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #224F34;
+}
+
+.best-selling-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+}
+
+/* ........................... */
+.best-selling-cards .card-3,
+.best-selling-cards .card-2,
+.best-selling-cards .card-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 51px;
+}
+
+.best-selling-cards .card-3 .text-area,
+.best-selling-cards .card-2 .text-area,
+.best-selling-cards .card-1 .text-area {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.best-selling .card-3 h3,
+.best-selling .card-2 h3,
+.best-selling .card-1 h3 {
+    color: #373737;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.best-selling .card-3 .pricing-rating,
+.best-selling .card-2 .pricing-rating,
+.best-selling .card-1 .pricing-rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 39px;
+}
+
+.best-selling .card-3 .pricing-rating>span
+.best-selling .card-2 .pricing-rating>span
+.best-selling .card-1 .pricing-rating>span {
+    font-family: "Poppins", sans-serif;
+    color: #454545;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.best-selling .card-3 .pricing-rating .vl,
+.best-selling .card-2 .pricing-rating .vl,
+.best-selling .card-1 .pricing-rating .vl {
+    width: 1px;
+    height: 27px;
+    background: #454545;
+}
+
+.best-selling .card-3 .rating-container,
+.best-selling .card-2 .rating-container,
+.best-selling .card-1 .rating-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+.best-selling .card-3 .rating-container span,
+.best-selling .card-2 .rating-container span,
+.best-selling .card-1 .rating-container span {
+    font-family: "Poppins", sans-serif;
+    color: #454545;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/* ........................... */
+
+.best-selling .see-all-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 18px;
+    padding: 16px 55px;
+    border: 2px solid #224F34;
+
+    color: #224F34;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    transition: background-color 0.3s ease, border-radius 0.3s ease-in-out;
+}
+
+.best-selling .see-all-btn:hover {
+    background-color: hsl(144, 40%, 62%);
+    border-radius: 50px;
+}
+
+.best-selling .see-all-btn:active {
+    background-color: hsl(144, 40%, 82%);
 }
