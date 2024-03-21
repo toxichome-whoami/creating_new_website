@@ -724,3 +724,196 @@ main {
     line-height: 31.46px;
     width: 420px;
 }
+/* ............................................... */
+
+.feedback-corner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 125px;
+    padding: 97.5px 175px 193px 175px;
+}
+
+.feedback-corner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+}
+
+.feedback-corner h2 {
+    color: #224F34;
+    font-family: "Roboto Slab";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.feedback-corner .text-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 37px;
+}
+
+.feedback-corner .text-area .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 22px;
+    padding: 21px;
+    background-color: #C2EFD4;
+    border-radius: 10px;
+    box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.feedback-corner .text-area .cards h3 {
+    color: #224F34;
+    font-family: "Roboto Serif";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.feedback-corner .text-area .cards p {
+    color: #224F34;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 401px;
+}
+
+.feedback-corner-container .slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 51px;
+}
+
+.feedback-corner-container .slider .padding {
+    padding: 13px 16px;
+    border-radius: 5px;
+    background-color: white;
+    filter: drop-shadow(0px 7px 51px rgba(0, 0, 0, 0.10));
+    cursor: pointer;
+
+    transition: background-color 0.2s ease-out;
+}
+
+.feedback-corner-container .slider .padding:hover {
+    background-color: #C2EFD4;
+}
+
+.feedback-corner-container .slider .padding:active {
+    background-color: hsl(144, 58%, 65%);
+}
+
+/* ............................................... */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #224F34;
+    padding: 82px 175px;
+    gap: 154px;
+}
+
+footer .first {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 144px;
+}
+
+.first .logo-and-social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 44px;
+}
+
+.first .logo-and-social-media h2 {
+    color: #FFF;
+    font-family: "Elephant";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.first .logo-and-social-media .social-media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+}
+
+.first .logo-and-social-media .social-media-container h3 {
+    color: #FFF;
+    font-family: "Roboto Slab";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.first .logo-and-social-media .social-media-container .logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+
+.first .shop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+}
+
+.first .shop-container h2 {
+    color: #FFF;
+    font-family: "Roboto Slab";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.first .shop-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 18px;
+    list-style: none;
+}
+
+.first .shop-container ul li a {
+    text-decoration: none;
+    color: #C2EFD4;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
