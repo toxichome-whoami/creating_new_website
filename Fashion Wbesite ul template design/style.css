@@ -20,6 +20,10 @@
     padding: 0;
 }
 
+body {
+    zoom: 0.67;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -71,7 +75,7 @@ header {
 
 .header-login-container img {
     position: relative;
-    bottom: -3px;
+    bottom: -5px;
     height: 30px;
     width: 30px;
 }
@@ -233,6 +237,13 @@ main {
     gap: 51px;
 }
 
+.best-selling-cards .card-3 img,
+.best-selling-cards .card-2 img,
+.best-selling-cards .card-1 img {
+    border-radius: 15px;
+    background: fixed;
+}
+
 .best-selling-cards .card-3 .text-area,
 .best-selling-cards .card-2 .text-area,
 .best-selling-cards .card-1 .text-area {
@@ -241,9 +252,9 @@ main {
     gap: 8px;
 }
 
-.best-selling .card-3 h3,
-.best-selling .card-2 h3,
-.best-selling .card-1 h3 {
+.best-selling-cards .card-3 h3,
+.best-selling-cards .card-2 h3,
+.best-selling-cards .card-1 h3 {
     color: #373737;
     font-family: "Poppins", sans-serif;
     font-size: 22px;
@@ -252,9 +263,9 @@ main {
     line-height: normal;
 }
 
-.best-selling .card-3 .pricing-rating,
-.best-selling .card-2 .pricing-rating,
-.best-selling .card-1 .pricing-rating {
+.best-selling-cards .card-3 .pricing-rating,
+.best-selling-cards .card-2 .pricing-rating,
+.best-selling-cards .card-1 .pricing-rating {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -262,9 +273,9 @@ main {
     gap: 39px;
 }
 
-.best-selling .card-3 .pricing-rating>span
-.best-selling .card-2 .pricing-rating>span
-.best-selling .card-1 .pricing-rating>span {
+.best-selling-cards .card-3 .text-area .pricing-rating span,
+.best-selling-cards .card-2 .text-area .pricing-rating span,
+.best-selling-cards .card-1 .text-area .pricing-rating span {
     font-family: "Poppins", sans-serif;
     color: #454545;
     font-size: 22px;
@@ -273,17 +284,17 @@ main {
     line-height: normal;
 }
 
-.best-selling .card-3 .pricing-rating .vl,
-.best-selling .card-2 .pricing-rating .vl,
-.best-selling .card-1 .pricing-rating .vl {
+.best-selling-cards .card-3 .pricing-rating .vl,
+.best-selling-cards .card-2 .pricing-rating .vl,
+.best-selling-cards .card-1 .pricing-rating .vl {
     width: 1px;
     height: 27px;
     background: #454545;
 }
 
-.best-selling .card-3 .rating-container,
-.best-selling .card-2 .rating-container,
-.best-selling .card-1 .rating-container {
+.best-selling-cards .card-3 .rating-container,
+.best-selling-cards .card-2 .rating-container,
+.best-selling-cards .card-1 .rating-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -291,9 +302,9 @@ main {
     gap: 9px;
 }
 
-.best-selling .card-3 .rating-container span,
-.best-selling .card-2 .rating-container span,
-.best-selling .card-1 .rating-container span {
+.best-selling-cards .card-3 .rating-container span,
+.best-selling-cards .card-2 .rating-container span,
+.best-selling-cards .card-1 .rating-container span {
     font-family: "Poppins", sans-serif;
     color: #454545;
     font-size: 22px;
@@ -301,6 +312,7 @@ main {
     font-weight: 500;
     line-height: normal;
 }
+
 /* ........................... */
 
 .best-selling .see-all-btn {
@@ -330,4 +342,385 @@ main {
 
 .best-selling .see-all-btn:active {
     background-color: hsl(144, 40%, 82%);
+}
+
+/* .............. */
+.our-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 83px;
+    padding: 97.5px 175px 195px 175px;
+}
+
+.our-products .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.our-products .text-container h2 {
+    font-family: "Roboto Slab";
+    color: #224F34;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+.our-products .text-container .text-area-container ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    list-style: none;
+}
+
+.our-products .text-container .text-area-container ul li a {
+    text-decoration: none;
+    text-align: center;
+
+    color: #454545;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+    transition: color 0.3s ease;
+}
+
+.our-products .text-container .text-area-container ul li a:hover {
+    color: #224F34;
+}
+
+.our-products .text-container .text-area-container ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #224F34;
+    transition: width 0.3s ease-in-out;
+}
+
+.our-products .text-container .text-area-container ul li a:hover::after {
+    width: 100%;
+}
+
+.our-products-cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 82px;
+}
+
+/* ............................................... */
+.our-products-cards-container .card-container-2,
+.our-products-cards-container .card-container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.our-products-cards-container .card-container-2 .card-4,
+.our-products-cards-container .card-container-2 .card-3,
+.our-products-cards-container .card-container-2 .card-2,
+.our-products-cards-container .card-container-2 .card-1,
+.our-products-cards-container .card-container-1 .card-4,
+.our-products-cards-container .card-container-1 .card-3,
+.our-products-cards-container .card-container-1 .card-2,
+.our-products-cards-container .card-container-1 .card-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+
+.our-products-cards-container .card-container-2 img,
+.our-products-cards-container .card-container-1 img {
+    border-radius: 15px;
+    background: fixed;
+}
+
+.our-products-cards-container .card-container-2 .text-area-container,
+.our-products-cards-container .card-container-1 .text-area-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.our-products-cards-container .card-container-2 .text-area-container h3,
+.our-products-cards-container .card-container-1 .text-area-container h3 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-family: "Poppins", sans-serif;
+    color: #373737;
+    text-align: center;
+}
+
+.our-products-cards-container .card-container-2 .pricing-rating,
+.our-products-cards-container .card-container-1 .pricing-rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+}
+
+.our-products-cards-container .card-container-2 .pricing-rating span,
+.our-products-cards-container .card-container-1 .pricing-rating span {
+    color: #454545;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.our-products-cards-container .card-container-2 .pricing-rating .vl,
+.our-products-cards-container .card-container-1 .pricing-rating .vl {
+    background: #454545;
+    width: 1px;
+    height: 27px;
+}
+
+.our-products-cards-container .card-container-2 .rating-container,
+.our-products-cards-container .card-container-1 .rating-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    flex-direction: row;
+}
+
+/* ............................................... */
+
+.exclusive-offer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 97.5px 175px 218px 175px;
+}
+
+.exclusive-offer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 41px;
+    gap: 104px;
+    width: 1377px;
+    height: 596px;
+    background-color: #C2EFD4;
+    border-radius: 15px;
+}
+
+.exclusive-offer .text-area-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 41px;
+}
+
+.exclusive-offer .text-area-container .text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.exclusive-offer .text-area-container .text-area h2 {
+    font-family: "Roboto Slab";
+    color: #224F34;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.exclusive-offer .text-area-container .text-area p {
+    color: #224F34;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36.74px;
+}
+
+.exclusive-offer .day-hour-min {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.exclusive-offer .day-hour-min .time {
+    border-radius: 3px;
+    background: #FFF;
+    box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 17px 29px;
+    text-align: center;
+}
+
+.exclusive-offer .day-hour-min .time h3 {
+    color: #224F34;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.exclusive-offer .day-hour-min .time p {
+    color: #224F34;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.exclusive-offer .text-area-container a {
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: #224F34;
+    border: 2px solid #224F34;
+    padding: 22px 64px;
+    border-radius: 3px;
+    box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.05);
+
+    transition: border 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease-in-out, color 0.3s ease;
+}
+
+.exclusive-offer .text-area-container a:hover {
+    border: 2px solid #224F34;
+    background-color: #224f3400;
+    border-radius: 50px;
+    color: #224F34;
+}
+
+.exclusive-offer .text-area-container a:active {
+    background-color: #224F34;
+    color: white;
+}
+
+/* ............................................... */
+
+.designer-clothes-for-you-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    /* margin-bottom: 111px; */
+    padding: 97.5px 175px 249px 175px;
+}
+
+.designer-clothes-for-you-container .text-area-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 51px;
+    text-align: center;
+}
+
+.designer-clothes-for-you-container .text-area-container h2 {
+    color: #224F34;
+    font-family: "Roboto Slab";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.designer-clothes-for-you-container .text-area-container p {
+    color: #224F34;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.designer-clothes-for-you-container .card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 43px;
+}
+
+.designer-clothes-for-you-container .card-container .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.designer-clothes-for-you-container .card-container .cards img {
+    border-radius: 15px;
+    background: fixed;
+}
+
+.designer-clothes-for-you-container .card-container .cards .text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.designer-clothes-for-you-container .card-container .cards .text-area h3 {
+    color: #373737;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.designer-clothes-for-you-container .card-container .cards .text-area p {
+    color: #373737;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31.46px;
+    width: 420px;
 }
